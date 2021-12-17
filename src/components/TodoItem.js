@@ -27,6 +27,7 @@ function TodoItem(props) {
             updateTodo={props.updateTodo}
             /> 
             ) : (
+
             <>
             <span onClick={() => setIsEdit(true)}>{ props.todoItem.title }</span>
             <div className="btn-group">
@@ -38,7 +39,7 @@ function TodoItem(props) {
                 </button>
             </div>
             </>
-            )
+                )
             }
         </li>
     )
